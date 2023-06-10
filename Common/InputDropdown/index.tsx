@@ -3,13 +3,12 @@ import React, { useState } from "react";
 import styles from "./inputDropdown.module.css";
 
 const InputDropdown = (props: DropdownProps) => {
-  const { label, options, onDropdownValueChange } = props;
+  const { label, options, selectedValue, onDropdownValueChange } = props;
 
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOptionSelect = (option: string) => {
-    setSelectedOption(option);
+    onDropdownValueChange(option);
     setIsOpen(false);
   };
 
@@ -18,8 +17,8 @@ const InputDropdown = (props: DropdownProps) => {
       <label> {label} </label>
 
       <div className={styles.dropdownToggle} onClick={() => setIsOpen(!isOpen)}>
-        {selectedOption ? selectedOption : "Select an option"}
-        &#9661; &#9651;
+        {selectedValue ? selectedValue : "Select an option"}
+        {isOpen ? <span> &#9651; </span> : <span> &#9661; </span>}
       </div>
       {isOpen && (
         <ul className={styles.dropdownMenu}>
@@ -37,6 +36,7 @@ const InputDropdown = (props: DropdownProps) => {
 type DropdownProps = {
   label: string;
   options: string[];
+  selectedValue: string;
   onDropdownValueChange: (value: string) => void;
 };
 

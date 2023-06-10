@@ -40,6 +40,7 @@
 }
 
 .button:hover {
-    background-color: rgb(63, 64, 64);
+    background-color: var(--button-hover-background);
+    color: var(--constant-white);
     transition: all 0.5s;
 }

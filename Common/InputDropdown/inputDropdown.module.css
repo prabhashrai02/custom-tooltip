@@ -1,0 +1,42 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown label {
+  margin: 8px 0;
+  display: block;
+  width: 100%;
+}
+
+.dropdownToggle {
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  border: var(--input-border);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 8px 0;
+  border: var(--input-border);
+  background-color: #fff;
+  z-index: 1;
+}
+
+.dropdownMenu li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f2f2f2;
+}

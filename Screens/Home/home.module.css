@@ -1,0 +1,15 @@
+.homepage {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formScreenContainer {
+    background-color: white;
+    width: 1100px;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

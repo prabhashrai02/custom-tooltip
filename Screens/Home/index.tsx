@@ -1,9 +1,17 @@
+import MobileScreen from "../MobileScreen";
+import TooltipForm from "../TooltipForm";
+
+import styles from './home.module.css';
+
 const Home = () => {
 
     return (
-        <>
-            HomePage
-        </>
+        <div className={styles.homepage}>
+            <div className={styles.formScreenContainer}>
+                <TooltipForm />
+                <MobileScreen />
+            </div>
+        </div>
     )
 }
 

@@ -1,18 +1,22 @@
+"use client";
+
 import MobileScreen from "../MobileScreen";
 import TooltipForm from "../TooltipForm";
+import useTooltip from "./useTooltip";
 
-import styles from './home.module.css';
+import styles from "./home.module.css";
 
 const Home = () => {
+  const { tooltipFormData, onEventChange, onValueChange } = useTooltip();
 
-    return (
-        <div className={styles.homepage}>
-            <div className={styles.formScreenContainer}>
-                <TooltipForm />
-                <MobileScreen />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className={styles.homepage}>
+      <div className={styles.formScreenContainer}>
+        <TooltipForm content={tooltipFormData} onEventChange={onEventChange} onValueChange={onValueChange} />
+        <MobileScreen />
+      </div>
+    </div>
+  );
+};
 
 export default Home;

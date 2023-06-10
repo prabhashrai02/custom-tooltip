@@ -1,17 +1,23 @@
-import Image from "next/image";
-
-import mobilePhone from '@/Assets/phoneSvg.svg';
-
 import styles from './mobileScreen.module.css';
 
 const MobileScreen = () => {
     return (
         <div>
-            <Image src={mobilePhone}
-                className={styles.phoneScreen}
-                alt={"mobile phone"}
-                height={500}
-                width={300} />
+            <div className={styles.backgroundMobile}>
+                <div className={styles.buttonsContainer}>
+                    <div className={styles.buttonsList}>
+                        <button className={styles.button}> Click here</button>
+                        <button className={styles.button}> Click here</button>
+                    </div>
+                    <div className={styles.centerButton}>
+                        <button className={styles.button}> Click here</button>
+                    </div>
+                    <div className={styles.buttonsList}>
+                        <button className={styles.button}> Click here</button>
+                        <button className={styles.button}> Click here</button>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,3 +1,45 @@
 .phoneScreen {
     width: 100%;
 }
+
+.backgroundMobile {
+    height: 500px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    background-position: 50%;
+    background-size: cover;
+    background-image: url('../../Assets/phoneSvg.svg');
+}
+
+.buttonsContainer {
+    margin-top: 56px;
+    width: 220px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttonsList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.centerButton {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(63, 64, 64);
+    transition: all 0.5s;
+}

@@ -8,7 +8,7 @@ import { isDigitKeyPressed } from "./tooltipFormHelper";
 import styles from "./tooltipForm.module.css";
 
 const TooltipForm = (props: Props) => {
-  const { content, onEventChange, onValueChange } = props;
+  const { content, onEventChange, onValueChange, onDefaultClick } = props;
 
   const handleNumberValueChange = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -108,6 +108,10 @@ const TooltipForm = (props: Props) => {
           value={content.arrowHeight}
         />
       </div>
+
+      <button className={styles.defaultButton} onClick={onDefaultClick}>
+        Set Default
+      </button>
     </div>
   );
 };
@@ -119,6 +123,7 @@ type Props = {
     field: string
   ) => void;
   onValueChange: (value: string, field: string) => void;
+  onDefaultClick: () => void;
 };
 
 export default TooltipForm;

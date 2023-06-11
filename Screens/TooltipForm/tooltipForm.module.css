@@ -3,6 +3,8 @@
   padding: 36px;
   background-color: #e5e5e5;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .inputLineContainer {
@@ -12,4 +14,17 @@
 
 .inputLineContainer > div {
   width: 40%;
+}
+
+.defaultButton {
+  background-color: #d5d5d5;
+  cursor: pointer;
+  margin-top: 24px;
+  padding: 8px;
+}
+
+.defaultButton:hover {
+  background-color: var(--button-hover-background);
+  color: var(--constant-white);
+  transition: all 0.5s;
 }

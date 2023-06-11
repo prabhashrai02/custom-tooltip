@@ -1,12 +1,16 @@
 import { ACTION_TYPE, TOOLTIP_DEFAULT_VALUE } from "./constants";
 
+
+const prevData = localStorage.getItem('customTooltip');
+
 const initialState = {
-  tooltipFormData: JSON.parse(JSON.stringify(TOOLTIP_DEFAULT_VALUE)),
+  tooltipFormData: prevData ? JSON.parse(prevData) : JSON.parse(JSON.stringify(TOOLTIP_DEFAULT_VALUE)),
 };
 
 const reducer = (prevState: State, action: Action): State => {
   switch (action.type) {
     case ACTION_TYPE.SET_TOOLTIP_FORM_DATA: {
+      localStorage.setItem('customTooltip', JSON.stringify(action.payload));
       return {
         ...prevState,
         tooltipFormData: action.payload,

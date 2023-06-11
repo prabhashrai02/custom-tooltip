@@ -31,10 +31,15 @@ const useTooltip = () => {
     dispatch({ type: ACTION_TYPE.SET_TOOLTIP_FORM_DATA, payload: value });
   };
 
+  const onDefaultClick = () => {
+    dispatch({ type: ACTION_TYPE.SET_DEFAULT_VALUE });
+  }
+
   return {
     tooltipFormData,
     onEventChange,
     onValueChange,
+    onDefaultClick
   };
 };
 

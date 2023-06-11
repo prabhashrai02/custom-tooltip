@@ -6,13 +6,13 @@ export const enum ACTION_TYPE {
 export const TOOLTIP_DEFAULT_VALUE = {
   tooltipPosition: "right",
   targetElement: "button3",
-  tooltipText: "Please Change tooltip text!!!",
+  tooltipText: "Made by Prabhash Rai 🥳",
   textSize: "14",
-  padding: "0",
+  padding: "15",
   textColor: "white",
   backgroundColor: "black",
   cornerRadius: "8",
-  tooltipWidth: "160",
+  tooltipWidth: "150",
   arrowWidth: "16",
   arrowHeight: "16",
 };

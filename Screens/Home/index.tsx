@@ -17,7 +17,7 @@ const Home = () => {
           onEventChange={onEventChange}
           onValueChange={onValueChange}
         />
-        <MobileScreen content={tooltipFormData} />
+        <MobileScreen content={tooltipFormData} onButtonClick={onValueChange} />
       </div>
     </div>
   );

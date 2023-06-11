@@ -3,8 +3,8 @@
 }
 
 .backgroundMobile {
-    height: 500px;
-    width: 250px;
+    height: 550px;
+    width: 300px;
     display: flex;
     justify-content: center;
     background-position: 50%;
@@ -14,8 +14,8 @@
 
 .buttonsContainer {
     margin-top: 56px;
-    width: 220px;
-    height: 380px;
+    width: 230px;
+    height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,0 +1,85 @@
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  width: 16px;
+  padding: 0;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.tooltip-top {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-top .arrow {
+  bottom: -8px;
+  left: calc(50% - 8px);
+  border-top: 0;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid black;
+  border-left: 8px solid transparent;
+}
+
+.tooltip-bottom {
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-bottom .arrow {
+  top: -8px;
+  left: calc(50% - 8px);
+  border-top: 8px solid black;
+  border-right: 8px solid transparent;
+  border-bottom: 0;
+  border-left: 8px solid transparent;
+}
+
+.tooltip-left {
+  top: 50%;
+  right: calc(100% + 8px);
+  transform: translateY(-50%);
+}
+
+.tooltip-left .arrow {
+  top: calc(50% - 8px);
+  right: -8px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid black;
+  border-bottom: 8px solid transparent;
+  border-left: 0;
+}
+
+.tooltip-right {
+  top: 50%;
+  left: calc(100% + 8px);
+  transform: translateY(-50%);
+}
+
+.tooltip-right .arrow {
+  top: calc(50% - 8px);
+  left: -8px;
+  border-top: 8px solid transparent;
+  border-right: 0;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid black;
+}
+
+.tooltipContainer {
+  display: flex;
+}

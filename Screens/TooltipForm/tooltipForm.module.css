@@ -1,15 +1,15 @@
 .tooltipForm {
-    width: 600px;
-    padding: 36px;
-    background-color: #e5e5e5;
-    border-radius: 16px;
+  width: 600px;
+  padding: 36px;
+  background-color: #e5e5e5;
+  border-radius: 16px;
 }
 
 .inputLineContainer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .inputLineContainer > div {
-    width: 40%;
+  width: 40%;
 }

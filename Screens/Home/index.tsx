@@ -12,8 +12,12 @@ const Home = () => {
   return (
     <div className={styles.homepage}>
       <div className={styles.formScreenContainer}>
-        <TooltipForm content={tooltipFormData} onEventChange={onEventChange} onValueChange={onValueChange} />
-        <MobileScreen />
+        <TooltipForm
+          content={tooltipFormData}
+          onEventChange={onEventChange}
+          onValueChange={onValueChange}
+        />
+        <MobileScreen content={tooltipFormData} />
       </div>
     </div>
   );

@@ -4,14 +4,15 @@ export const enum ACTION_TYPE {
 }
 
 export const TOOLTIP_DEFAULT_VALUE = {
-    targetElement: '',
-    tooltipText: 'Please Change tooltip text!!!',
-    textSize: '14px',
-    padding: '0px',
-    textColor: 'white',
-    backgroundColor: 'black',
-    cornerRadius: '8px',
-    tooltipWidth: '16px',
-    arrowWidth: '16px',
-    arrowHeight: '16px'
-}
+  tooltipPosition: "right",
+  targetElement: "button3",
+  tooltipText: "Please Change tooltip text!!!",
+  textSize: "14",
+  padding: "0",
+  textColor: "white",
+  backgroundColor: "black",
+  cornerRadius: "8",
+  tooltipWidth: "160",
+  arrowWidth: "16",
+  arrowHeight: "16",
+};

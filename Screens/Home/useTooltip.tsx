@@ -1,4 +1,3 @@
-
 import { useReducer } from "react";
 
 import { TooltipFormStateType, initialState, reducer } from "./reducer";
@@ -9,21 +8,24 @@ const useTooltip = () => {
 
   const { tooltipFormData } = state;
 
-  const onEventChange = (e: React.ChangeEvent<HTMLInputElement>, field: string) => {
+  const onEventChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    field: string
+  ) => {
     const { value } = e.target;
 
     const tempTooltipForm = { ...tooltipFormData };
     tempTooltipForm[field] = value;
 
     setTooltipFormData(tempTooltipForm);
-  }
+  };
 
   const onValueChange = (value: string, field: string) => {
     const tempTooltipForm = { ...tooltipFormData };
     tempTooltipForm[field] = value;
 
     setTooltipFormData(tempTooltipForm);
-  }
+  };
 
   const setTooltipFormData = (value: TooltipFormStateType) => {
     dispatch({ type: ACTION_TYPE.SET_TOOLTIP_FORM_DATA, payload: value });
@@ -32,8 +34,8 @@ const useTooltip = () => {
   return {
     tooltipFormData,
     onEventChange,
-    onValueChange
-  }
+    onValueChange,
+  };
 };
 
 export default useTooltip;

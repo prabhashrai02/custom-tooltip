@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tooltip Component
 
-## Getting Started
+This repository contains a frontend app that implements a tooltip component with dynamic positioning, style, and text. The app is built using React.js and Next.js, and it includes a live preview of the tooltip being rendered.
 
-First, run the development server:
+## Problem Statement
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+In-app nudges provide non-intrusive guides for various features of a mobile app. The goal of this project is to build a tooltip component that can be used to draw attention to a specific element on the screen. The tooltip should support setting the target element, position (top/right/bottom/left), style, and text dynamically. Additionally, it should provide a real-time preview of a mobile screen with button elements that act as the target elements for the tooltip.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instructions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To set up and run the project locally, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* Clone the repository: git clone <repository_url>
+* Navigate to the project directory: cd custom-tooltip
+* Install the dependencies: npm install
+* Start the development server: npm run dev
+* Open your web browser and visit http://localhost:3000 to see the app in action.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+Once the app is running, you can use the tooltip component to configure and preview tooltips with different settings. The following features are available:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Set the target element: You can select a button element on the mobile screen as the target for the tooltip.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* Choose the position: Specify the position of the tooltip relative to the target element (top/right/bottom/left).
 
-## Deploy on Vercel
+* Customize the style: Adjust the styling of the tooltip, including background color, text color, and font size.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Enter the tooltip text: Provide the text content that will be displayed in the tooltip.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+The tooltip component is built and positioned without the use of any additional libraries. It leverages the capabilities of React.js and Next.js to achieve the desired functionality.
+
+### Persistence
+
+The data used to build the tooltips is persistent. This means that any tooltips you create and configure will be saved and retained even if you close and reopen the app. You can revisit the app at any time, and your previous tooltips will be loaded and displayed.
+

@@ -17,6 +17,7 @@ const reducer = (prevState: State, action: Action): State => {
       };
     }
     case ACTION_TYPE.SET_DEFAULT_VALUE: {
+      localStorage.setItem('customTooltip', JSON.stringify(TOOLTIP_DEFAULT_VALUE));
       return {
         ...prevState,
         tooltipFormData: JSON.parse(JSON.stringify(TOOLTIP_DEFAULT_VALUE)),

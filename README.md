@@ -35,3 +35,7 @@ The tooltip component is built and positioned without the use of any additional 
 
 The data used to build the tooltips is persistent. This means that any tooltips you create and configure will be saved and retained even if you close and reopen the app. You can revisit the app at any time, and your previous tooltips will be loaded and displayed.
 
+
+# Screenshot
+
+![image](https://github.com/prabhashrai02/custom-tooltip/assets/73634195/7127f7db-75d8-4054-9df4-0b0d9f913725)

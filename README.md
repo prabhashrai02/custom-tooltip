@@ -38,4 +38,5 @@ The data used to build the tooltips is persistent. This means that any tooltips 
 
 # Screenshot
 
-![image](https://github.com/prabhashrai02/custom-tooltip/assets/73634195/7127f7db-75d8-4054-9df4-0b0d9f913725)
+![image](https://github.com/prabhashrai02/custom-tooltip/assets/73634195/69377d5e-0013-4874-b13d-4a21d019ade7)
+
